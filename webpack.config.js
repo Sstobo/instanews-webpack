@@ -1,9 +1,8 @@
 module.exports = {
   entry: './src/scripts.js', 
-  entry: './src/main.js',
 
   output: {
-     filename: './build/bundle.js'
+     filename: './build/js/bundle.js'
   },
   module: {
     

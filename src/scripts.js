@@ -1,3 +1,4 @@
+import "./styles.scss";
 
 // Loading icon code from Stack Overflow 
   $(document).ready(function() {
