@@ -1,0 +1,39 @@
+.icon {
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+    @include tablet {
+      align-self: center;
+      flex-direction: row;
+    }
+  
+
+  }
+
+  .gallery {
+    flex-wrap: wrap;
+    display: flex;
+    height: auto;
+    width: 100%;   
+    @include tablet {
+      display: flex;
+      flex-flow: row wrap;  
+    }
+      a {
+        display: flex;
+        height: auto;
+        min-height: 375px;
+        text-decoration: none;
+        background-size: cover;   
+        flex-direction: column;
+        justify-content: flex-end;
+      
+        @include tablet {
+          width: 50%;
+        }
+        @include desktop {
+          width: 25%;
+        }
+      }
+    }

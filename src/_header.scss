@@ -1,0 +1,33 @@
+.nav-large {
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin-top: 30px;
+  @include tablet {
+    height: auto;
+    transition: 1s;
+    padding: 5% 40% 0 0;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+  }
+}
+.img-large {
+  height: 300px;
+}
+.img-small {
+  height: 100px;
+}
+
+.nav-small {
+  height: auto;
+  margin: 60px;
+  @include tablet {
+    padding: 0 50% 0 4% ;
+    height: auto;
+    margin: 30px;
+    flex-direction: row;
+    align-content: flex-start;
+}
+}
