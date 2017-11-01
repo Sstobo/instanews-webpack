@@ -18,8 +18,8 @@ $('#select').on("change", function () {
   $(".img-large").addClass("img-small"), $(".nav-large").addClass("nav-small");
 
   // AJAX KICKIN IT
-  var choice = $(this).val();
-  var url = "https://api.nytimes.com/svc/topstories/v2/" + choice + ".json";
+  let choice = $(this).val();
+  let url = "https://api.nytimes.com/svc/topstories/v2/" + choice + ".json";
   url += '?' + $.param({
     'api-key': "6c99ca9dc93041a3bf6637bf813f3725"
   });
@@ -39,10 +39,10 @@ $('#select').on("change", function () {
       return item.multimedia.length !== 0;
     }).splice(0, 12), function (index, value) {
       console.log('data.results:', value);
-      var multimediaIndex = value.multimedia.length - 1;
-      var title = value.abstract;
-      var image = value.multimedia[multimediaIndex].url;
-      var url = value.url;
+      let multimediaIndex = value.multimedia.length - 1;
+      let title = value.abstract;
+      let image = value.multimedia[multimediaIndex].url;
+      let url = value.url;
       $('.gallery').append('<a href="' + url + '" style="background-image:url(' + image + ');">' + "<h1>" + title + "</h1>" + '</a>');
     });
   });

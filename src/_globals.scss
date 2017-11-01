@@ -24,6 +24,7 @@ body {
 .loading {
   height: 150px;
   width: 150px;
+  background-image: url("/images/ajax-loader.gif");
   background-size: cover;
   position: absolute;
   left: 35%;
