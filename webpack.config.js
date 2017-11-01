@@ -1,8 +1,8 @@
 module.exports = {
   entry: './src/scripts.js', 
-
+  devtool: "inline-source-map",
   output: {
-     filename: './build/js/bundle.js'
+     filename: './build/bundle.js'
   },
   module: {
     
