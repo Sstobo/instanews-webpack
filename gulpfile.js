@@ -1,4 +1,4 @@
-// LINKED NODES 
+
   var gulp = require('gulp'),
   uglify = require('gulp-uglify'),
   rename = require('gulp-rename'),
@@ -32,11 +32,6 @@
     .pipe(rename('styles1.min.css'))
     .pipe(gulp.dest('build/css'));
 });
-  // var CleanCSS = require('clean-css');
-
-
-
-
 // LINT NODE
   gulp.task('eslint', function() { 
     return gulp.src(['js/*.js'])
@@ -44,8 +39,6 @@
         .pipe(eslint.format())
         .pipe(eslint.failAfterError());
   });
-
-
 //  JS / CSS MINIFY / MOVE 
   gulp.task('scripts', ["babel", "eslint"], function(){
   gulp.src(output + "*.js")
@@ -53,9 +46,8 @@
   .pipe(uglify())
   .pipe(rename({ extname: '.min.js' }))
   .pipe(gulp.dest('./build/js/'))
-  
   });
-
+  
   gulp.task('styles', function(){
   gulp.src('./*.css')
   .pipe(rename({ extname: '.min.css' }))

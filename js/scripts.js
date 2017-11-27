@@ -2,13 +2,13 @@ $(document).ready(function() {
               $('.loading').hide();
               $(document).ajaxStart( function() {
                    $('.loading').show();  // show Loading Div
-              }).ajaxComplete(function(){ // <--------------try with .ajaxComplete
+              }).ajaxComplete(function(){ 
                     $('.loading').hide(); // hide loading div
               });
            });
 
   $('#select').on("change", function(){  
-  $(".img-large").addClass("img-small"),
+  $(".img-large").addClass("img-small"),    // SWITCH BETWEEN CLASSES
   $(".nav-large").addClass("nav-small");
 
     let choice = $(this).val();
@@ -24,15 +24,14 @@ $(document).ready(function() {
     throw err;
   })
   .done(function(data) {
-     $(".gallery").empty();
+     $(".gallery").empty();      // TARGET GALLERY
 
       $.each(data.results.filter(function(item) { return item.multimedia.length !== 0 }).splice(0, 12), function(index, value) {
-      console.log('data.results:', value)
       let multimediaIndex = (value.multimedia.length - 1);
       let title = value.abstract;
       let image = value.multimedia[multimediaIndex].url;
       let url = value.url
-     $('.gallery').append('<a href="' + url + '" style="background-image:url(' + image + ');">' + "<h1>" + title + "</h1>" + '</a>');
+     $('.gallery').append('<a href="' + url + '" style="background-image:url(' + image + ');">' + "<h1>" + title + "</h1>" + '</a>');   // APPEND TO THE .GALLERY CLASS
   });
   });
   });

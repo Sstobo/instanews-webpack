@@ -1,11 +1,10 @@
 body {
-  background-color: black;
+  background-color: red;
   text-align: center;   
 }
 #caps {
   text-transform: uppercase;
 }
-
 .selection {
   height: 100px;
   width: 200px;
@@ -19,8 +18,6 @@ body {
     bottom: 30px;
 }
 }
-
-
 .loading {
   height: 150px;
   width: 150px;
@@ -29,4 +26,7 @@ body {
   position: absolute;
   left: 35%;
   bottom: 50%;
+}
+a:hover {
+  height: 130%;
 }

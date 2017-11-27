@@ -2,21 +2,18 @@
 
 This project is a webpage that pulls news stories from the New York Times API.
 
-## Getting Started
+## Learnings
 
-Click on the select bar and choose what stories to read.
+This was my first time using APIs. Very versatile and powerful. I tried to start this project with grid as a basis and discovered that when there is outside content being pulled, it can be better to use flex. 
 
-I originally built this in Grid, but learned that choosing the right tool for the job is extremely important. Since this site has a 1 dimensional layout, flex is the way to go.
+## Hurdles  
 
-## Deployment
-
-Good to go!
+Again, grid was my first hurdle. I started coding before I actually planned out the format, and this caused me to restart several days in.
 =======
 
-## Deployment
+## Take aways
 
-Add additional notes about how to deploy this on a live system
-
+Planning. I really enjoy the inception and start of projects. I now pace myself a bit and make sure that I have a solid plan in place before diving into the code.
 
 ## Built With
 
