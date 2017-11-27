@@ -1,5 +1,4 @@
-# webpack
-# instanews-webpack
+# Instanews
 
 This project is a webpage that pulls news stories from the New York Times API.
 

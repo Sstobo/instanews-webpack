@@ -5,7 +5,6 @@ module.exports = {
      filename: './build/bundle.js'
   },
   module: {
-    
     rules: [
     // ...other loaders...
     {

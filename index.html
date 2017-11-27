@@ -1,46 +1,43 @@
-<!-- HEAD INFO -->
 <html>
-  <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Instanews</title> 
-      <link rel=StyleSheet href="./lib/normalize.css" type="text/css" media=screen>   
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"> 
-      <script src="./lib/jquery-3.2.1.min.js"></script>
-      <script src="./build/bundle.js"></script>  
-      <!-- SASS SHEET -->
-      <!-- <link href="build/css/styles.min.css" type="text/css" rel="stylesheet"/> -->
-  </head>
-<body class="test">
-<!-- MAIN WRAPPER AND ICON -->
-<nav class="nav-large"> 
-<header class="icon"><img src="images/nyt-logo.svg" class="img-large" alt="New york times logo">
-<!-- SELECTION -->
-  <div class="selection"><p>Choose your selection: </p>
-    <form>
-      <select id="select">
-      <option value="main">Select an option</option>
-      <option value="home">Home</option>
-      <option value="sports">Sports</option>
-      <option value="politics">Politics</option>
-      <option value="world">World</option>
-      <option value="national">National</option>
-      <option value="science">Science</option>
-      <option value="business">Business</option>
-      <option value="health">Health</option>
-      <option value="arts">Arts</option>
-      </select>
-    </form> 
-  </div>
-</header>
-</nav>  
-<!-- GALLERY -->
-<main class="gallery"></main>  
-<div class="loading"></div>
-<!-- COPYRIGHT -->
-<footer class="copyright">&copy; Copyright 2016 <span id="caps">instanews</span></footer>
-<!-- CLOSING DIVS / SCRIPTS -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Instanews</title> 
+        <link rel=StyleSheet href="build/css/normalize.css" type="text/css" media=screen>   
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"> 
+        <link href="build/css/styles1.min.css" type="text/css" rel="stylesheet"/>
+    </head>
 
+  <body class="test">
 
-</body>
-</html>
+  <nav class="nav-large"> 
+    <header class="icon"><img src="images/nyt-logo.svg" class="img-large" alt="New york times logo">
+
+      <div class="selection"><p>Choose your selection: </p>
+        <form>
+          <select id="select">
+          <option value="main">Select an option</option>
+          <option value="home">Home</option>
+          <option value="sports">Sports</option>
+          <option value="politics">Politics</option>
+          <option value="world">World</option>
+          <option value="national">National</option>
+          <option value="science">Science</option>
+          <option value="business">Business</option>
+          <option value="health">Health</option>
+          <option value="arts">Arts</option>
+          </select>
+        </form> 
+      </div>
+
+    </header>
+  </nav>  
+
+  <main class="gallery"></main>  
+  <div class="loading"></div>
+  <footer class="copyright">&copy; Copyright 2016 <span id="caps">instanews</span></footer>
+
+  <script src="lib/jquery-3.2.1.min.js"></script>
+  <script src="build/js/scripts.min.js"></script>  
+  </body>
+  </html>
